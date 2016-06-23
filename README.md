@@ -8,6 +8,7 @@ Lettered Keys is a mod for the game 'Keep Talking and Nobody Explodes'.
 ### Manuals:
 
 HTML: https://bdkuhman.github.io/LetterKeys/Lettered%20Keys%20Manual.html
+
 PDF: https://bdkuhman.github.io/LetterKeys/Lettered%20Keys%20Manual.pdf
 
 
