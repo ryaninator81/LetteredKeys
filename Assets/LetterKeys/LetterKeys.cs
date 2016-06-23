@@ -65,8 +65,8 @@ public class LetterKeys : MonoBehaviour {
             Dictionary<string, string> responseDict = JsonConvert.DeserializeObject<Dictionary<string, string>>(response);
             serial = responseDict["serial"];
         }
-        write(batteryCount.ToString());
-        write(serial);
+        //write(batteryCount.ToString());
+       // write(serial);
 
         string s = getCorrectButton(batteryCount, serial);
         if (button.Equals(s))
@@ -114,6 +114,7 @@ public class LetterKeys : MonoBehaviour {
         }
     }
 
+    /*
     private void write(string s)
     {
         using (StreamWriter writer = new StreamWriter("E:\\Documents\\test.txt", true))
@@ -121,4 +122,5 @@ public class LetterKeys : MonoBehaviour {
             writer.WriteLine(s);
         }
     }
+    */
 }
