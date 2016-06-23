@@ -3,8 +3,13 @@ Lettered Keys is a mod for the game 'Keep Talking and Nobody Explodes'.
 
 ![Lettered Keys Module](http://i.imgur.com/e6FrjiE.png "Lettered Keys Module")
 
-Releases:
-Manuals:
+### Releases:https://github.com/bdkuhman/LetterKeys/releases/
+
+### Manuals:
+
+HTML: https://bdkuhman.github.io/LetterKeys/Lettered%20Keys%20Manual.html
+PDF: https://bdkuhman.github.io/LetterKeys/Lettered%20Keys%20Manual.pdf
+
 
 
 ##Installation
