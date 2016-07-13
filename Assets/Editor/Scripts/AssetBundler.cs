@@ -59,26 +59,16 @@ public class AssetBundler
     private List<string> scriptPathsToRestore = new List<string>();
     #endregion
 
-    [MenuItem("Keep Talking ModKit/Build AssetBundle")]
+    [MenuItem("Keep Talking ModKit/Build AssetBundle", priority = 10)]
     public static void BuildAllAssetBundles_WithEditorUtility()
     {
         BuildModBundle(false);
     }
 
-    [MenuItem("Keep Talking ModKit/Build AssetBundle (with MSBuild)")]
+    [MenuItem("Keep Talking ModKit/Build AssetBundle (with MSBuild)", priority = 11)]
     public static void BuildAllAssetBundles_MSBuild()
     {
         BuildModBundle(true);
-    }
-    [MenuItem("Keep Talking ModKit/Build AssetBundle and Run")]
-    public static void BuildAllAssetBundles_Run()
-    {
-        BuildModBundle(false);
-        System.Diagnostics.Process ktane = new System.Diagnostics.Process();
-        ktane.StartInfo.FileName = "E:\\Desktop\\Ktane\\ktane.exe";
-        ktane.StartInfo.WorkingDirectory = "E:\\Desktop\\Ktane";
-        ktane.Start();
-        //System.Diagnostics.Process.Start("cmd.exe");
     }
 
     protected static void BuildModBundle(bool useMSBuild)
@@ -96,7 +86,7 @@ public class AssetBundler
         AssetBundler bundler = new AssetBundler();
 
         bundler.assemblyName = ModConfig.ID;
-        bundler.outputFolder = ModConfig.OutputFolder + "\\" + bundler.assemblyName;
+        bundler.outputFolder = ModConfig.OutputFolder + "/" + bundler.assemblyName;
 
         bool success = false;
 
@@ -249,7 +239,6 @@ public class AssetBundler
 
         if (!File.Exists(outputFilename))
         {
-            Debug.LogError(outputFilename);
             throw new Exception("Compilation failed!");
         }
 
