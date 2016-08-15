@@ -41,11 +41,11 @@ public class LetterKeys : MonoBehaviour {
             TextMesh buttonText = buttons[i].GetComponentInChildren<TextMesh>();
             buttonText.text = temp2[temp1[i]];
             int j = i;
-            buttons[i].OnInteract += delegate () { OnPress(temp2[temp1[j]]); return false; };
+            buttons[i].OnInteract += delegate () { OnPress(temp2[temp1[j]], buttons[i]); return false; };
         }
     }
 
-    void OnPress(string button)
+    void OnPress(string button, KMSelectable buttonObj)
     {
         GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, transform);
         List<string> responses = null;
