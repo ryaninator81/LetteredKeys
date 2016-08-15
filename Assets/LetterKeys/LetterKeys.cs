@@ -31,7 +31,6 @@ public class LetterKeys : MonoBehaviour {
                 temp1.Add(i);
             }
         }
-        int batteryCount = 0;
 
 
         TextMesh numberText = textMesh;
