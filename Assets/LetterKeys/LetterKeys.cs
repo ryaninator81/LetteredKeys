@@ -47,7 +47,7 @@ public class LetterKeys : MonoBehaviour {
 
     void OnPress(string button)
     {
-        //KMAudio.PlaySoundAtTransformHandler()
+        GetComponent<KMAudio>().PlayGameSoundAtTransform(KMSoundOverride.SoundEffect.ButtonPress, transform);
         List<string> responses = null;
         int batteryCount = 0;
         responses = GetComponent<KMBombInfo>().QueryWidgets(KMBombInfo.QUERYKEY_GET_BATTERIES, null);
@@ -65,8 +65,8 @@ public class LetterKeys : MonoBehaviour {
             serial = responseDict["serial"];
         }
         //write(batteryCount.ToString());
-       // write(serial);
-
+        // write(serial);
+       
         string s = getCorrectButton(batteryCount, serial);
         if (button.Equals(s))
         {
@@ -76,6 +76,7 @@ public class LetterKeys : MonoBehaviour {
         {
             GetComponent<KMBombModule>().HandleStrike();
         }
+        
     }
 
     private string getCorrectButton(int batteryCount, string serial)

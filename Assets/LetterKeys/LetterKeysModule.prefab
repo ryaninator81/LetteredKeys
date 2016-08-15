@@ -191,7 +191,7 @@ GameObject:
   - 4: {fileID: 458782}
   - 114: {fileID: 11450930}
   - 114: {fileID: 11466140}
-  - 114: {fileID: 11472980}
+  - 114: {fileID: 11418878}
   - 114: {fileID: 11412046}
   - 114: {fileID: 11400450}
   m_Layer: 0
@@ -2118,6 +2118,17 @@ MonoBehaviour:
   m_Script: {fileID: 2144496390, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11418878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 125828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1675560866, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11422316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2238,17 +2249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ModuleType: LetterKeys
   ModuleDisplayName: Letter Keys
---- !u!114 &11472980
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1675560866, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  RequiresTimerVisibility: 0
 --- !u!114 &11482480
 MonoBehaviour:
   m_ObjectHideFlags: 1
