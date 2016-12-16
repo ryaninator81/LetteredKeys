@@ -7,8 +7,6 @@ public class LetterKeys : MonoBehaviour {
 
     public KMSelectable[] buttons;
 
-    string correctLetter;
-    int correctIndex;
     int magicNum;
     public TextMesh textMesh;
 
@@ -19,7 +17,6 @@ public class LetterKeys : MonoBehaviour {
 
     void Init()
     {
-        correctIndex = Random.Range(0, 4);
         magicNum = Random.Range(0, 100);
         string[] temp2 = { "A", "B", "C", "D" };
         List<int> temp1 = new List<int>();
@@ -32,16 +29,14 @@ public class LetterKeys : MonoBehaviour {
             }
         }
 
-
         TextMesh numberText = textMesh;
         numberText.text = magicNum.ToString();
         for (int i = 0; i < buttons.Length; i++)
         {
-
             TextMesh buttonText = buttons[i].GetComponentInChildren<TextMesh>();
             buttonText.text = temp2[temp1[i]];
             int j = i;
-            buttons[i].OnInteract += delegate () { OnPress(temp2[temp1[j]], buttons[i]); return false; };
+            buttons[i].OnInteract += delegate () { OnPress(temp2[temp1[j]], buttons[j]); return false; };
         }
     }
 
