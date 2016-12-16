@@ -14,4 +14,4 @@ MonoBehaviour:
   id: LetterKeys
   title: Lettered Keys
   version: v0.0.2
-  outputFolder: C:\Users\Brennan\Documents\Ktane Mods\ktane game\mods
+  outputFolder: build
