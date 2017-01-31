@@ -147,9 +147,9 @@ GameObject:
   - 114: {fileID: 11409448}
   - 114: {fileID: 11441966}
   - 114: {fileID: 11401206}
-  - 114: {fileID: 11402358}
+  - 114: {fileID: 114000012409255628}
   m_Layer: 0
-  m_Name: LetterKeysModule
+  m_Name: LetteredKeysModule
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1396,23 +1396,6 @@ MonoBehaviour:
   m_Script: {fileID: 2144496390, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11402358
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124414}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0de356ec9bf1ca4499fa5964eba5c271, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 11466112}
-  - {fileID: 11490764}
-  - {fileID: 11426402}
-  - {fileID: 11467568}
-  textMesh: {fileID: 10279148}
 --- !u!114 &11403660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1463,8 +1446,8 @@ MonoBehaviour:
   m_Script: {fileID: -119419473, guid: 45b809be76fd7a3468b6f517bced6f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ModuleType: LetterKeys
-  ModuleDisplayName: Letter Keys
+  ModuleType: LetteredKeys
+  ModuleDisplayName: Lettered Keys
   RequiresTimerVisibility: 0
 --- !u!114 &11426402
 MonoBehaviour:
@@ -1763,6 +1746,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShaderNames:
   - KT/Mobile/Diffuse
+--- !u!114 &114000012409255628
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de356ec9bf1ca4499fa5964eba5c271, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 11466112}
+  - {fileID: 11490764}
+  - {fileID: 11426402}
+  - {fileID: 11467568}
+  textMesh: {fileID: 10279148}
 --- !u!114 &114000013046713654
 MonoBehaviour:
   m_ObjectHideFlags: 1

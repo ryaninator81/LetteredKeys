@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 
-public class LetterKeys : MonoBehaviour {
+public class LetteredKeys : MonoBehaviour {
 
     public KMSelectable[] buttons;
 

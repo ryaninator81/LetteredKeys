@@ -13,15 +13,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WorkshopPublishedFileID: 745100131
   Title: Lettered Keys
-  Description: 'A simple module that, depending on the number at the top, requires you to press a certain button.
+  Description: 'A simple module that, depending on the number at the top, requires
+    you to press a certain button.
 
 
-Manual here:
+    Manual here:
 
-https://bdkuhman.github.io/LetterKeys/Lettered%20Keys%20Manual.pdf
+    https://bdkuhman.github.io/LetterKeys/Lettered%20Keys%20Manual.pdf
 
 
-ModID: "LetterKeys"'
+    ModID: "LetteredKeys"'
   PreviewImage: {fileID: 0}
   Tags:
   - Regular Module
