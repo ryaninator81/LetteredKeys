@@ -65,6 +65,7 @@ public class LetteredKeys : MonoBehaviour {
         string s = getCorrectButton(batteryCount, serial);
         if (button.Equals(s))
         {
+            magicNum = XX
             GetComponent<KMBombModule>().HandlePass();
         }
         else
